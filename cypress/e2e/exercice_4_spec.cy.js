@@ -8,13 +8,13 @@ describe('Validations Exercice 4: ', () => {
         cy.get('aside').should('have.css', 'background-color', 'rgb(179, 217, 255)')
         cy.get('footer').should('have.css', 'background-color', 'rgb(153, 204, 153)')
     })
-    it('Should have Bold and centered h1', ()=>{
+    it('Should have Bold and centered h1', () => {
         cy.get('h1').should('exist')
             .and('have.css', 'font-weight', '700')
             .and('have.css', 'text-align', 'center')
     })
     it('Should have 20px margin on section', () => {
-        cy.get('section').should('have.css', 'margin', '20px' )
+        cy.get('section').should('have.css', 'margin', '20px')
     })
     it('Should have main displayed with flexbox', () => {
         cy.get('main').should('have.css', 'display', 'flex')
@@ -32,7 +32,7 @@ describe('Validations Exercice 4: ', () => {
             .and('have.css', 'border-width', '1px')
     })
     it('Should have a shadow on header and footer box shadow', () => {
-        cy.get('header').should('exist').and('have.css', 'box-shadow').and('not.contain.value', 'none')
-        cy.get('footer').should('exist').and('have.css', 'box-shadow').and('not.contain.value', 'none')
+        cy.get('header').should('exist').and('not.have.css', 'box-shadow', "none")
+        cy.get('footer').should('exist').and('not.have.css', 'box-shadow', 'none')
     })
 })

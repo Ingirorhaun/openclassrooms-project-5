@@ -1,0 +1,13 @@
+// 1. Appliquez une **couleur** de texte bleue (`#007bff`) à tous les éléments de liste à l’aide d’une variable (`$blue`) ;
+// 2. Ajoutez un **espacement** intérieur de 10 pixels à gauche des éléments de liste ;
+// 3. Donnez à chaque élément de liste **une marge** inférieure de 15 pixels.
+
+$blue: blue;
+
+ul {
+    li {
+        color: $blue;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+}
